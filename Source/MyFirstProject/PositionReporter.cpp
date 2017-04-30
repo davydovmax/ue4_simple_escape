@@ -17,7 +17,6 @@ UPositionReporter::UPositionReporter()
 void UPositionReporter::BeginPlay()
 {
 	Super::BeginPlay();
-
     FString theName = GetOwner()->GetName();
     FVector position = GetOwner()->GetActorLocation();
     UE_LOG(LogTemp, Warning, TEXT("[%s] is at [%s]"), *theName, *position.ToString());
